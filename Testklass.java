@@ -78,8 +78,8 @@ public class Testklass {
         int vabadeKohtadeArv = valitudKontsert.getMüüdavatePiletiteArv() - kohtadeList.size();
         System.out.println("Kontserdile " + valitudKontsert.getKontserdiPealkiri() + " on veel " + vabadeKohtadeArv + " vaba kohta.");
         
-        //Soovitud piletite arv. Siia tuleks veel lisada, et kui soovitud kohtade arv on
-        //suurem kui müüdavate kohtade arv, siis tuleb mingi teade ja küsitakse uuesti. --> Helen: Peaks ehk kuskil arvet pidama, kui palju pileteid on müüdud.
+        //Soovitud piletite arv
+        //Siin peaks ilmselt mingi tsükli tegema, et ta laseks nii kaua piletite arvu sisestada, kuni on õigesti.
         int soovitudPiletiteArv = ostja1.valiKohtadeArv();
 
         if (soovitudPiletiteArv > valitudKontsert.getMüüdavatePiletiteArv()){
