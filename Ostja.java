@@ -1,7 +1,6 @@
 //Ostja teeb oma valikud: 1) kontserdi pealkiri, 2) kohtade arv.
-//Siia võib ehk meetoditena panna ka muud valikud..
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class Ostja {
     private String nimi;
@@ -10,16 +9,12 @@ public class Ostja {
         this.nimi = nimi;
     }
     public String valiKontsert() {
-        Scanner kontsert = new Scanner(System.in);
-        System.out.println("Sisesta soovitud kontserdi nimi: ");
-        String soovitudKontserdiNimi = kontsert.next();
+        String soovitudKontserdiNimi = JOptionPane.showInputDialog("Sisesta soovitud kontserdi nimi");
         return soovitudKontserdiNimi;
 
     }
-    public int valiKohtadeArv(){
-        Scanner arv = new Scanner(System.in);
-        System.out.println("Sisesta soovitud kohtade arv: ");
-        int soovitudArv = arv.nextInt();
+    public int valiKohtadeArv() {
+        int soovitudArv = Integer.parseInt(JOptionPane.showInputDialog("Sisesta soovitud piletite arv"));
         return soovitudArv;
     }
 }
