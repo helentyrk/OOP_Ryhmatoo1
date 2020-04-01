@@ -3,9 +3,9 @@ public class Kontsert {
     private String toimumiseKoht;
     private String toimumiseAeg;
     private int müüdavatePiletiteArv;
-    private double piletiHind;
+    private int piletiHind;
 
-    public Kontsert(String kontserdiPealkiri, String toimumiseKoht, String toimumiseAeg, int müüdavatePiletiteArv, double piletiHind) {
+    public Kontsert(String kontserdiPealkiri, String toimumiseKoht, String toimumiseAeg, int müüdavatePiletiteArv, int piletiHind) {
         this.kontserdiPealkiri = kontserdiPealkiri;
         this.toimumiseKoht = toimumiseKoht;
         this.toimumiseAeg = toimumiseAeg;
@@ -13,8 +13,33 @@ public class Kontsert {
         this.piletiHind = piletiHind;
     }
 
+    public String getKontserdiPealkiri() {
+        return kontserdiPealkiri;
+    }
+
+    public void setKontserdiPealkiri(String kontserdiPealkiri) {
+        this.kontserdiPealkiri = kontserdiPealkiri;
+    }
+
+    public String getToimumiseAeg() {
+        return toimumiseAeg;
+    }
+
+    public void setToimumiseAeg(String toimumiseAeg) {
+        this.toimumiseAeg = toimumiseAeg;
+    }
+
+    public int getMüüdavatePiletiteArv() {
+        return müüdavatePiletiteArv;
+    }
+
+    public void setMüüdavatePiletiteArv(int müüdavatePiletiteArv) {
+        this.müüdavatePiletiteArv = müüdavatePiletiteArv;
+    }
+
+
     @Override
     public String toString() {
-        return "Kontserdile " + kontserdiPealkiri + " müüakse kokku " + müüdavatePiletiteArv + " piletit.";
+        return "Kontserdi " + kontserdiPealkiri + " toimumiskoht on " + toimumiseKoht + ", piletihind on " + piletiHind + "eurot, kokku müüakse kontserdile " + müüdavatePiletiteArv + " piletit.";
     }
 }
