@@ -74,6 +74,10 @@ public class Testklass {
             System.out.println("Parse Exception");
         }
 */
+        //Teatab vabade kohtade arvu
+        int vabadeKohtadeArv = valitudKontsert.getMüüdavatePiletiteArv() - kohtadeList.size();
+        System.out.println("Kontserdile " + valitudKontsert.getKontserdiPealkiri() + " on veel " + vabadeKohtadeArv + " vaba kohta.");
+        
         //Soovitud piletite arv. Siia tuleks veel lisada, et kui soovitud kohtade arv on
         //suurem kui müüdavate kohtade arv, siis tuleb mingi teade ja küsitakse uuesti. --> Helen: Peaks ehk kuskil arvet pidama, kui palju pileteid on müüdud.
         int soovitudPiletiteArv = ostja1.valiKohtadeArv();
