@@ -12,34 +12,29 @@ public class Kontsert {
         this.müüdavatePiletiteArv = müüdavatePiletiteArv;
         this.piletiHind = piletiHind;
     }
-
     public String getKontserdiPealkiri() {
         return kontserdiPealkiri;
     }
-
     public void setKontserdiPealkiri(String kontserdiPealkiri) {
         this.kontserdiPealkiri = kontserdiPealkiri;
     }
-
     public String getToimumiseAeg() {
         return toimumiseAeg;
     }
-
     public void setToimumiseAeg(String toimumiseAeg) {
         this.toimumiseAeg = toimumiseAeg;
     }
-
     public int getMüüdavatePiletiteArv() {
         return müüdavatePiletiteArv;
     }
-
     public void setMüüdavatePiletiteArv(int müüdavatePiletiteArv) {
         this.müüdavatePiletiteArv = müüdavatePiletiteArv;
     }
-
-
+    public int getPiletiHind() {
+        return piletiHind;
+    }
     @Override
     public String toString() {
-        return "Kontserdi " + kontserdiPealkiri + " toimumiskoht on " + toimumiseKoht + ", piletihind on " + piletiHind + "eurot, kokku müüakse kontserdile " + müüdavatePiletiteArv + " piletit.";
+        return "Kontserdi " + kontserdiPealkiri + " toimumiskoht on " + toimumiseKoht + ", piletihind on " + piletiHind + " eurot, kokku müüakse kontserdile " + müüdavatePiletiteArv + " piletit.";
     }
 }
