@@ -5,7 +5,7 @@ public class Peaklass {
     public static void main(String[] args) {
         //Valikus olevad kontserdid ja nende massiiv ning uus ostja
         Kontsert kontsert1 = new Kontsert("Päike", "Vanemuise kontserdisaal", "02-04-2020", 35, 15);
-        Kontsert kontsert2 = new Kontsert("Rahu", "Viljandi Pärimusmuusika Ait", "04-30-2020", 20, 13);
+        Kontsert kontsert2 = new Kontsert("Rahu", "Viljandi Pärimusmuusika Ait", "30-04-2020", 20, 13);
         Kontsert[] kontserdid = {kontsert1, kontsert2};
         Ostja ostja1 = new Ostja("Mari");
 
