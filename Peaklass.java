@@ -61,19 +61,9 @@ public class Peaklass {
         }
         System.out.println("Soovitud pileteid: " + soovitudPiletiteArv);
         
-        //Kuupäeva valimine
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Sisesta kuupäev kujul: päev-kuu-aasta");
-        System.out.print("Sisesta kuupäev: ");
-        String soovitudKuupäev = scan.nextLine();
-        try {
-            Date date = sdf.parse(soovitudKuupäev);
-            sdf = new SimpleDateFormat("EEE, d MMM yyyy");
-            System.out.println("Soovitud kuupäev: " + sdf.format(date));
-        } catch (ParseException e) {
-            System.out.println("Parse Exception");
-        }
+        //Soovitud kuupäev
+        String soovitudKuupäev = ostja1.valiKuupäev();
+        System.out.println("Soovitud kuupäev: " + soovitudKuupäev);
 
         //Loon müüdud kohtade listi
         List<Integer> kohtadeList = new ArrayList<>();
