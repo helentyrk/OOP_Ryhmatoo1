@@ -35,7 +35,7 @@ public class Peaklass {
         for (Kontsert k : kontserdid) {
             System.out.println(k.getKontserdiPealkiri() + ", toimub " + k.getToimumiseAeg() + ".");
         }
-        //Ostja valib kontserdi meetodiga 'valiKontsert', esialgu paneme "valitud kontserdi" väärtuseks näiteks esimese kontserdi.
+        //Ostja valib kontserdi meetodiga 'valiKontsert', esialgu paneme "valitud kontserdi" väärtuseks uue tühja kontserdi.
         String valitudPealkiri = ostja1.valiKontsert();
         Kontsert valitudKontsert = new Kontsert();
 
