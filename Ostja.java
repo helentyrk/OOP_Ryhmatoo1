@@ -36,7 +36,7 @@ public class Ostja {
             kuupäev = new SimpleDateFormat("EEE, d. MMM yyyy");
             System.out.println("Soovitud kuupäev: " + kuupäev.format(date));
         } catch (ParseException e) {
-            System.out.println("Parse Exception");
+            System.out.println("Viga kuupäevas");
         }
         return soovitudKuupäev;
     }
