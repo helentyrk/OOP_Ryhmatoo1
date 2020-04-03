@@ -1,3 +1,6 @@
+//Kontserdipiletite ostmise programm
+//Tegijad: Katrin Rajamäe, Helen Türk
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,7 +39,7 @@ public class Peaklass {
             System.out.println(k.getKontserdiPealkiri() + ", toimub " + k.getToimumiseAeg() + ".");
         }
         System.out.println("---*---*---*---*---*---*---*---");
-        //Ostja valib kontserdi meetodiga 'valiKontsert', esialgu paneme "valitud kontserdi" väärtuseks uue tühja kontserdi.
+        //Ostja valib kontserdi meetodiga 'valiKontsert'
         String valitudPealkiri = ostja1.valiKontsert();
         Kontsert valitudKontsert = new Kontsert();
 
